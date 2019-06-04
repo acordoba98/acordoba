@@ -1,23 +1,15 @@
 <!DOCTYPE html>
 <html>
 	<head>
-
-    <!-- include a-frame -->
     <script src="https://mnutsch.github.io/arjs_workshop/start/vendor/aframe/build/aframe.min.js"></script>
-
-    <!-- include ar.js for aframe -->
     <script src='https://mnutsch.github.io/arjs_workshop/start/vendor/arjs/build/aframe-ar.js'></script>
     <script>ARjs.Context.baseURL = 'https://mnutsch.github.io/arjs_workshop/start/vendor/three.js/'</script>
 
     <script>		
       window.onload = function () 
       {
-
-        var intervalLength = 20; //determines the speed of the animation (milliseconds to wait between ticks)
-
-        //define the scene, for ease of interacting with it
+        var intervalLength = 20;
         var scene = document.querySelector('a-scene');       
-
         setInterval(function()
         {
           
@@ -38,11 +30,11 @@
       <a-anchor hit-testing-enabled='true'>
 
         <a-plane position="0 0 0" rotation="-90 0 0" width="4" height="2" color="#7BC8A4" shadow></a-plane>
-        <a-sphere position="2 0 -1" radius="0.3" color="#EF2D5E" shadow></a-sphere>
+        <a-sphere position="2 0 -1" rotation="-90 0 0" radius="0.3" repeat="2" src="https://images-na.ssl-images-amazon.com/images/I/71VQR1WetdL.png" shadow></a-sphere>
         <a-sphere position="0 0 0" radius="0.3" color="#EF2D5E" shadow></a-sphere>
-        <a-sphere position="-2 0 -1" radius="0.3" color="#EF2D5E" shadow></a-sphere>
-        <a-sphere position="-2 0 1" radius="0.3" color="#EF2D5E" shadow></a-sphere>
-        <a-sphere position="2 0 1" radius="0.3" color="#EF2D5E" shadow></a-sphere>
+        <a-sphere position="-2 0 -1" rotation="-90 0 0" repeat="2" src="youtube.jpg" radius="0.3" shadow></a-sphere>
+        <a-sphere position="-2 0 1" rotation="-90 0 0" repeat="2" src="https://is2-ssl.mzstatic.com/image/thumb/Purple113/v4/74/a1/a4/74a1a400-55d5-6e07-4eee-532c2e9ecaa5/AppIcon-0-1x_U007emarketing-0-0-GLES2_U002c0-512MB-sRGB-0-0-0-85-220-0-0-0-6.png/246x0w.jpg" radius="0.3" shadow></a-sphere>
+        <a-sphere position="2 0 1" rotation="-90 0 0" repeat="2" src="twitter.png" radius="0.3" shadow></a-sphere>
         
       </a-anchor>
 
